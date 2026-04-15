@@ -299,7 +299,7 @@
     {
       "tag": "Apple",
       "type": "selector",
-      "default": "United States",
+      "default": "Direct",
       "outbounds": [
         "Auto",
         "Proxy",
