@@ -385,6 +385,11 @@
         "outbound": "Proxy"
       },
       {
+        "rule_set": ["ruleset-iso"],
+        "action": "route",
+        "outbound": "United States"
+      },
+      {
         "rule_set": ["geosite-slack"],
         "action": "route",
         "outbound": "Slack"
@@ -456,6 +461,13 @@
       }
     ],
     "rule_set": [
+      {
+        "tag": "ruleset-iso",
+        "type": "remote",
+        "format": "source",
+        "url": "https://raw.githubusercontent.com/muikiri/sing-box/refs/heads/main/rule-set/iso.json",
+        "download_detour": "Proxy"
+      },
       {
         "tag": "geosite-slack",
         "type": "remote",
