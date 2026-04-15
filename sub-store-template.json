@@ -390,6 +390,11 @@
         "outbound": "United States"
       },
       {
+        "rule_set": ["ruleset-spark"],
+        "action": "route",
+        "outbound": "Japan"
+      },
+      {
         "rule_set": ["geosite-slack"],
         "action": "route",
         "outbound": "Slack"
@@ -466,6 +471,13 @@
         "type": "remote",
         "format": "source",
         "url": "https://raw.githubusercontent.com/muikiri/sing-box/refs/heads/main/rule-set/iso.json",
+        "download_detour": "Proxy"
+      },
+      {
+        "tag": "ruleset-spark",
+        "type": "remote",
+        "format": "source",
+        "url": "https://raw.githubusercontent.com/muikiri/sing-box/refs/heads/main/rule-set/spark.json",
         "download_detour": "Proxy"
       },
       {
